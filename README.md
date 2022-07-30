@@ -7,23 +7,20 @@ SDK for Wannads ad network (Android only at the moment)
 
 ```dart
 FlutterWannads.instance.init(apiKey: "[ApiKey]", 
-                            apiSecret: "[ApiSecret]",             
-                            user: WanUser(id: "test"));
-);
+                             apiSecret: "[ApiSecret]",             
+                             user: WanUser(id: "[Unique_User_Id]"));
 ```
 
 ### 2. Show Offerwall
 
 ```dart
 FlutterWannads.instance.showOfferwall();
-);
 ```
 
 ### 3. Show SurveyOfferwall
 
 ```dart
 FlutterWannads.instance.showSurveysOfferwall();
-);
 ```
 
 ## Important
