@@ -1,7 +1,7 @@
 name: flutter_wannads
-description: A new Flutter plugin project.
+description: SDK for Wannads ad network (Android only at the moment)
 version: 0.0.1
-homepage:
+homepage: https://github.com/BlissoftCorp/flutter_wannads
 
 environment:
   sdk: ">=2.17.1 <3.0.0"
