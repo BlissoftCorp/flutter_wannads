@@ -1,0 +1,48 @@
+group 'com.blissoft.flutter_wannads'
+version '1.0'
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.1.2'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 31
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdkVersion 16
+    }
+}
+
+dependencies{
+    //implementation project(":wannads", configuration="default")
+    //implementation files("wannads/wannads-sdk-2.5.0.aar")
+    implementation "com.google.android.material:material:1.6.1"
+    implementation'com.squareup.okhttp3:okhttp:3.14.9'
+    implementation'com.squareup.retrofit2:retrofit:2.6.4'
+    implementation'com.squareup.retrofit2:converter-gson:2.6.3'
+    implementation 'jp.wasabeef:picasso-transformations:2.4.0'
+    implementation files('libs/wannads.aar')
+}
+
+
