@@ -24,6 +24,12 @@ class MockFlutterWannadsPlatform
     
     throw UnimplementedError();
   }
+
+  @override
+  Future<void> showSurveysOfferwall() {
+    
+    throw UnimplementedError();
+  }
 }
 
 void main() {

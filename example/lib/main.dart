@@ -34,7 +34,8 @@ class _MyAppState extends State<MyApp> {
             );},
           child: const Text('Init Wannads'),
         ),
-        ElevatedButton(onPressed: (){FlutterWannads.instance.showOfferwall();}, child: const Text("Mostrar Offerwall"))
+        ElevatedButton(onPressed: (){FlutterWannads.instance.showOfferwall();}, child: const Text("Mostrar Offerwall")),
+                ElevatedButton(onPressed: (){FlutterWannads.instance.showSurveysOfferwall();}, child: const Text("Mostrar SurveysOfferwall"))
         ],)
       ),
     );

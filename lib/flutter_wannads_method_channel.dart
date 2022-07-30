@@ -43,4 +43,9 @@ class MethodChannelFlutterWannads extends FlutterWannadsPlatform {
   Future<void> showOfferwall()async{
     await methodChannel.invokeMethod<bool>("showOfferwall");
   }
+
+  @override
+  Future<void> showSurveysOfferwall()async{
+    await methodChannel.invokeMethod<bool>("showSurveysOfferwall");
+  }
 }

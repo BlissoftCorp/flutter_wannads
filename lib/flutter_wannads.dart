@@ -21,4 +21,8 @@ class FlutterWannads {
   Future<void> showOfferwall() {
     return FlutterWannadsPlatform.instance.showOfferwall();
   }
+
+  Future<void> showSurveysOfferwall() {
+    return FlutterWannadsPlatform.instance.showSurveysOfferwall();
+  }
 }

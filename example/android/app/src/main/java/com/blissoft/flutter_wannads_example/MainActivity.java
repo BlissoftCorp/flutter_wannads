@@ -1,4 +1,4 @@
-package com.blissoft.makemoney;
+package com.blissoft.flutter_wannads_example;
 
 import io.flutter.embedding.android.FlutterActivity;
 

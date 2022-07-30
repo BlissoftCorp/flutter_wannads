@@ -51,6 +51,9 @@ public class FlutterWannadsPlugin implements FlutterPlugin, MethodCallHandler, A
         case "showOfferwall":
           WannadsSdk.getInstance().showOfferWall();
           break;
+        case "showSurveysOfferwall":
+          WannadsSdk.getInstance().showSurveysOfferWall();
+          break;
       }
       result.success(Boolean.TRUE);
     } catch (Exception e) {

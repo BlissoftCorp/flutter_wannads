@@ -36,4 +36,8 @@ abstract class FlutterWannadsPlatform extends PlatformInterface {
   Future<String?> getPlatformVersion() {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
+
+  Future<void> showSurveysOfferwall() {
+    throw UnimplementedError('showSurveysOfferwall() has not been implemented.');
+  }
 }
