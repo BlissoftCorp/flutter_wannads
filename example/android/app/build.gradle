@@ -57,3 +57,9 @@ android {
 flutter {
     source '../..'
 }
+
+dependencies{
+    implementation files("../../../android/wannads/wannads-sdk-2.5.0.aar")
+    //implementation "com.wannads:android-sdk:2.5.0"
+    //implementation files("wannads/wannads-sdk-2.5.0.aar")
+}
