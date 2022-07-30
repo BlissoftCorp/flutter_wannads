@@ -1,15 +1,31 @@
-# flutter_wannads
+# Flutter Wannads
 
-A new Flutter plugin project.
-
+SDK for Wannads ad network (Android only at the moment)
 ## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+### 1. Initialization:
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```dart
+FlutterWannads.instance.init(apiKey: "[ApiKey]", 
+                            apiSecret: "[ApiSecret]",             
+                            user: WanUser(id: "test"));
+);
+```
+
+### 2. Show Offerwall
+
+```dart
+FlutterWannads.instance.showOfferwall();
+);
+```
+
+### 3. Show SurveyOfferwall
+
+```dart
+FlutterWannads.instance.showSurveysOfferwall();
+);
+```
+
+## Important
+This plugin is still under development, use it at your own risk
 
