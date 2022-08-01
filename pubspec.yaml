@@ -1,6 +1,6 @@
 name: flutter_wannads
 description: SDK for Wannads ad network (Android only at the moment)
-version: 0.0.1
+version: 0.0.3
 homepage: https://github.com/BlissoftCorp/flutter_wannads
 
 environment:

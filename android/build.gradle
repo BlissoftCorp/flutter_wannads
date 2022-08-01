@@ -5,17 +5,23 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-    }
+        flatDir {
+        dirs 'libs'
+      }
 
     dependencies {
         classpath 'com.android.tools.build:gradle:7.1.2'
     }
+}
 }
 
 rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
+        flatDir {
+        dirs 'libs'
+      }
     }
 }
 
@@ -34,20 +40,13 @@ android {
     }
 }
 
-
-
 dependencies{
-    //implementation project(":wannads", configuration="default")
-    compileOnly files("wannads/wannads-sdk-2.5.0.aar")
+    implementation (name:"wannads",ext:"aar")
     implementation "com.google.android.material:material:1.6.1"
     implementation'com.squareup.okhttp3:okhttp:3.14.9'
     implementation'com.squareup.retrofit2:retrofit:2.6.4'
     implementation'com.squareup.retrofit2:converter-gson:2.6.3'
     implementation 'jp.wasabeef:picasso-transformations:2.4.0'
-    //implementation files("wannads/wannads-sdk-2.5.0.aar")
-    //api fileTree(dir: 'libs', include: ['*.aar'])
-    
-    //classpath 'com.wannads:android-sdk:2.5.0'
 }
 
 
